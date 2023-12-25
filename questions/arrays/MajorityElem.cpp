@@ -32,5 +32,14 @@ int majorityelemoptimal(std::vector<int> v) {
 		else {
 			cnt--; 
 		}
+		int cnt1 = 0; 
+		for (int i = 0; i < v.size(); i++)
+		{
+			if (v[i] == el) cnt1++; 
+		}
+		if (cnt > (v.size() / 2)) {
+			return el; 
+		}
+		return -1; 
 	}
 }
